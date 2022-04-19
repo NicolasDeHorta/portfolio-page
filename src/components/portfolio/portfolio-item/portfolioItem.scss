@@ -49,3 +49,26 @@ a {
     color: lightblue;
   }
 }
+
+@media (max-width: 800px) {
+  .portfolioItemWrapper {
+    width: 100%;
+    margin: 0;
+  }
+
+  .portfolioItemContainer {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+
+    img {
+      width: 100%;
+    }
+
+    .leftContainer {
+      text-align: center;
+      align-items: center;
+      gap: 0;
+    }
+  }
+}
