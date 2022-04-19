@@ -1,0 +1,112 @@
+.entrance {
+  $animation-speed: 700ms;
+
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  background-color: #282c34;
+  color: white;
+
+  animation: fadeOut 3000ms cubic-bezier(0.17, 0.67, 0.04, 0.99) forwards;
+
+  .entranceText {
+    font-size: 6rem;
+    position: absolute;
+    bottom: calc(50vh - 1rem);
+    left: 45%;
+    opacity: 0;
+  }
+
+  .nicolasText {
+    animation: appear $animation-speed cubic-bezier(0.17, 0.67, 0.04, 0.99)
+        forwards,
+      growN 500ms 2500ms ease-out;
+
+    span {
+      animation: disappear ($animation-speed - $animation-speed / 5) forwards;
+    }
+  }
+
+  .deText {
+    animation: appear $animation-speed $animation-speed
+        cubic-bezier(0.17, 0.67, 0.04, 0.99) forwards,
+      growD 500ms 2500ms ease-out;
+
+    span {
+      animation: disappear ($animation-speed - $animation-speed / 5)
+        $animation-speed forwards;
+    }
+  }
+
+  .hortaText {
+    animation: appear $animation-speed $animation-speed * 2
+        cubic-bezier(0.17, 0.67, 0.04, 0.99) forwards,
+      growH 500ms 2500ms ease-out;
+    span {
+      animation: disappear ($animation-speed - $animation-speed / 5)
+        $animation-speed * 2 forwards;
+    }
+  }
+}
+
+@keyframes appear {
+  0% {
+    transform: translateY(300%);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes growN {
+  to {
+    transform: translateX(130vw) scale(20);
+  }
+}
+
+@keyframes growD {
+  to {
+    transform: translateX(30vw) scale(20);
+  }
+}
+
+@keyframes growH {
+  to {
+    transform: translateX(90vw) scale(20);
+  }
+}
