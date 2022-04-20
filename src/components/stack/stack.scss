@@ -41,6 +41,18 @@
   &:hover::before {
     box-shadow: 0 0 200px 15px white;
   }
+
+  &::after {
+    content: attr(data-info);
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 0) scale(0);
+    transition: transform 300ms ease-in-out;
+  }
+  &:hover::after {
+    transform: translate(-50%, 0);
+  }
 }
 
 .item0 {
