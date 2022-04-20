@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio-page/static/css/main.0b06587b.css",
-    "main.js": "/portfolio-page/static/js/main.f8555c73.js",
+    "main.css": "/portfolio-page/static/css/main.804edda3.css",
+    "main.js": "/portfolio-page/static/js/main.edab3e75.js",
     "static/media/spaceTurtle.gif": "/portfolio-page/static/media/spaceTurtle.8566e9d1e81c955e3ec7.gif",
     "static/media/eMercadoImg.png": "/portfolio-page/static/media/eMercadoImg.2027c661b9d2f2bc282f.png",
+    "static/media/minesweeperImg.gif": "/portfolio-page/static/media/minesweeperImg.10736a540119e85050f8.gif",
     "static/media/regilImg.jpeg": "/portfolio-page/static/media/regilImg.ab2cf8255686848bb834.jpeg",
     "static/media/morseWebapp.jpeg": "/portfolio-page/static/media/morseWebapp.52be8c9e7c463af4cc4e.jpeg",
-    "static/media/minesweeper-img.png": "/portfolio-page/static/media/minesweeper-img.25c578b69a86df4afa48.png",
     "static/media/backgroundHexagons.jpg": "/portfolio-page/static/media/backgroundHexagons.0f6527845d1b02a58507.jpg",
     "static/media/passwordsaver.jpeg": "/portfolio-page/static/media/passwordsaver.0c394aafa8ecc3340dcb.jpeg",
     "index.html": "/portfolio-page/index.html",
-    "main.0b06587b.css.map": "/portfolio-page/static/css/main.0b06587b.css.map",
-    "main.f8555c73.js.map": "/portfolio-page/static/js/main.f8555c73.js.map"
+    "main.804edda3.css.map": "/portfolio-page/static/css/main.804edda3.css.map",
+    "main.edab3e75.js.map": "/portfolio-page/static/js/main.edab3e75.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b06587b.css",
-    "static/js/main.f8555c73.js"
+    "static/css/main.804edda3.css",
+    "static/js/main.edab3e75.js"
   ]
 }
