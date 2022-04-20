@@ -13,7 +13,6 @@ import {
   faReact,
   faSass,
 } from "@fortawesome/free-brands-svg-icons";
-import { faFlask } from "@fortawesome/free-solid-svg-icons";
 
 const typescriptIcon: any = {
   prefix: "fac",

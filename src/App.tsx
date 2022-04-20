@@ -17,7 +17,9 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
+      <div className="navbarView">
+        <Navbar />
+      </div>
       {/* {entering && <Entrance />} */}
 
       <Landing />

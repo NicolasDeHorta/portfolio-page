@@ -7,7 +7,7 @@ h1,
 }
 
 .presentationWrapper {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -26,6 +26,7 @@ h1,
   align-self: center;
   justify-self: center;
   transition: transform ease-in-out 500ms, opacity 300ms ease-in-out;
+  padding: 0 0 10% 0;
 }
 
 .gone-left {
@@ -80,7 +81,7 @@ h1,
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 70vh;
+    height: 90vh;
   }
   .presentation {
     width: 100%;

@@ -2,6 +2,7 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)),
     url("./assets/img/backgroundHexagons.jpg");
   perspective: 10px;
+  scroll-behavior: smooth;
 }
 
 .App {
@@ -26,4 +27,11 @@ body {
     width: 100vw;
     height: 100%;
   }
+}
+
+@media (min-height: 800px) {
+  // .navbarView {
+  //   position: sticky;
+  //   bottom: top;
+  // }
 }

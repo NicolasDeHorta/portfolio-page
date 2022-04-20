@@ -59,7 +59,15 @@ export const Presentation = () => {
       >
         <Stack />
       </div>
-      <div className={`downArrow ${offset > offsetTrigger ? "gone-down" : ""}`}>
+      <div
+        className={`downArrow ${offset > offsetTrigger ? "gone-down" : ""}`}
+        onClick={() => {
+          window.scrollTo({
+            top: window.innerHeight,
+            behavior: "smooth",
+          });
+        }}
+      >
         <FontAwesomeIcon icon={faAnglesDown} />
       </div>
     </div>
