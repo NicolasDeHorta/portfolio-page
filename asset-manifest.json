@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio-page/static/css/main.3bc33f94.css",
+    "main.css": "/portfolio-page/static/css/main.b0be8fd6.css",
     "main.js": "/portfolio-page/static/js/main.bb5e9bda.js",
     "static/media/spaceTurtle.gif": "/portfolio-page/static/media/spaceTurtle.8566e9d1e81c955e3ec7.gif",
     "static/media/eMercadoImg.png": "/portfolio-page/static/media/eMercadoImg.2027c661b9d2f2bc282f.png",
@@ -10,11 +10,11 @@
     "static/media/backgroundHexagons.jpg": "/portfolio-page/static/media/backgroundHexagons.0f6527845d1b02a58507.jpg",
     "static/media/passwordsaver.jpeg": "/portfolio-page/static/media/passwordsaver.0c394aafa8ecc3340dcb.jpeg",
     "index.html": "/portfolio-page/index.html",
-    "main.3bc33f94.css.map": "/portfolio-page/static/css/main.3bc33f94.css.map",
+    "main.b0be8fd6.css.map": "/portfolio-page/static/css/main.b0be8fd6.css.map",
     "main.bb5e9bda.js.map": "/portfolio-page/static/js/main.bb5e9bda.js.map"
   },
   "entrypoints": [
-    "static/css/main.3bc33f94.css",
+    "static/css/main.b0be8fd6.css",
     "static/js/main.bb5e9bda.js"
   ]
 }
