@@ -1,5 +1,6 @@
 import "./portfolioItem.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlay, faSearch } from "@fortawesome/free-solid-svg-icons";
 
 interface PortfolioItemProps {
   img: string;
@@ -26,18 +27,30 @@ export const PortfolioItem = ({
         <div className="leftContainer">
           <p className="portfolioItemText">{text}</p>
           <p>
-            {deploy && (
-              <a target="_blank" rel="noreferrer" href={deploy}>
-                View deployment
-              </a>
-            )}
-            {repo && (
-              <div>
-                <a target="_blank" rel="noreferrer" href={repo}>
-                  The repo is here
-                </a>
-              </div>
-            )}
+            <div className="actions">
+              {repo && (
+                <div
+                  className="actionBtn"
+                  onClick={() => window.open(repo, "_blank")}
+                >
+                  <span>
+                    <FontAwesomeIcon icon={faSearch} />
+                  </span>
+                  Check the code
+                </div>
+              )}
+              {deploy && (
+                <div
+                  className="actionBtn"
+                  onClick={() => window.open(deploy, "_blank")}
+                >
+                  <span>
+                    <FontAwesomeIcon icon={faPlay} />
+                  </span>
+                  Try it !
+                </div>
+              )}
+            </div>
           </p>
           <div className="portfolioItemStack">
             {stack.map((stackItem) => (

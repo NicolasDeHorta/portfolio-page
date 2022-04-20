@@ -1,5 +1,5 @@
-import minesweeperImg from "./assets/img/minesweeper-img.png";
-import regulImg from "./assets/img/regilImg.jpeg";
+import minesweeperImg from "./assets/img/minesweeperImg.gif";
+import regulImg from "./assets/img/regulImg.gif";
 import spaceTurtle from "./assets/img/spaceTurtle.gif";
 import eMercado from "./assets/img/eMercadoImg.png";
 import morseWebapp from "./assets/img/morseWebapp.jpeg";

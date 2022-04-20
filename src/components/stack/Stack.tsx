@@ -4,6 +4,7 @@ import {
   faPython,
   faNode,
   faGit,
+  faSass,
 } from "@fortawesome/free-brands-svg-icons";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -53,8 +54,8 @@ export const Stack = () => {
       name: "Node.js",
     },
     {
-      item: faGit,
-      name: "git",
+      item: faSass,
+      name: "SASS",
     },
     {
       item: faDatabase,

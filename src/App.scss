@@ -3,6 +3,7 @@ body {
     url("./assets/img/backgroundHexagons.jpg");
   perspective: 10px;
   scroll-behavior: smooth;
+  animation: breathing 1000ms alternate infinite;
 }
 
 .App {

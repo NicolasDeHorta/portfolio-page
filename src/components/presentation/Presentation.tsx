@@ -17,7 +17,7 @@ export const Presentation = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const offsetTrigger = 350;
+  const offsetTrigger = 400;
 
   return (
     <div className="presentationWrapper">
