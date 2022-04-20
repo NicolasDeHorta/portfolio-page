@@ -5,3 +5,8 @@
 .portfolioItem {
   margin-bottom: 2rem;
 }
+
+.isVisible {
+  transform: translateX(0);
+  transition: all ease-in-out 250ms;
+}

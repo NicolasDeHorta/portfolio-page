@@ -3,12 +3,18 @@
   flex-direction: column;
   align-items: center;
   margin: 2rem;
+  opacity: 0.3;
   padding-bottom: 5rem;
   perspective: 200px;
+  transition: all ease-in-out 250ms;
 
   h2 {
     font-size: 2rem;
   }
+}
+
+.isVisible {
+  opacity: 1;
 }
 
 .portfolioItemContainer {

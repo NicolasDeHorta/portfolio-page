@@ -71,7 +71,7 @@ export const Stack = () => {
   ];
 
   return (
-    <div className="main">
+    <div className="stackWrapper">
       <div className="container">
         {stackItems.map(({ name, item }, index) => {
           return (

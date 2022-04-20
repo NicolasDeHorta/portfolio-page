@@ -1,4 +1,4 @@
-.main {
+.stackWrapper {
   width: 90%;
 }
 
@@ -7,6 +7,8 @@
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 4rem);
   gap: 3rem 1vw;
+  align-items: center;
+  justify-items: center;
 }
 
 .stackItem {
@@ -17,7 +19,7 @@
 
   &:hover {
     color: skyblue;
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
 }
 
@@ -45,8 +47,8 @@
   &::after {
     content: attr(data-info);
     position: absolute;
-    top: 80%;
     left: 50%;
+    top: 110%;
     transform: translate(-50%, 0) scale(0);
     transition: transform 300ms ease-in-out;
   }
@@ -94,5 +96,9 @@
   }
   .stackItem {
     font-size: 10vw;
+  }
+
+  .stackWrapper {
+    padding-bottom: 3rem;
   }
 }
