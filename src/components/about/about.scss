@@ -1,0 +1,26 @@
+.textWrapper {
+  margin: 3rem;
+  font-size: 2rem;
+  min-height: 90vh;
+
+  span {
+    color: rgb(48, 195, 253);
+    margin-inline: 0.5rem;
+    white-space: nowrap;
+  }
+}
+
+.aboutLink {
+  font-size: 2rem;
+}
+
+@media (max-width: 800px) {
+  .textWrapper {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+
+  .aboutLink {
+    font-size: 1.3rem;
+  }
+}

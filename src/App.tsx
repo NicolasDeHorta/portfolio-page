@@ -1,33 +1,27 @@
+import { HashRouter, Route, Routes } from "react-router-dom";
 import { Landing } from "./components/landing/Landing";
-// import { Entrance } from "./components/entrance/Entrance";
 import { Footer } from "./components/footer/Footer";
 import { Navbar } from "./components/navbar/Navbar";
-import { Portfolio } from "./components/portfolio/Portfolio";
+import { About } from "./components/about/About";
 
 import "./App.scss";
 
 function App() {
-  // const [entering, setEntering] = useState(true);
-
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setEntering(false);
-  //   }, 3000);
-  // }, []);
-
   return (
-    <div className="App">
-      <div className="navbarView">
-        <Navbar />
+    <HashRouter>
+      <div className="App">
+        <div className="navbarView">
+          <Navbar />
+        </div>
+        <Routes>
+          <Route path="/about" element={<About />} />
+          <Route path="/" element={<Landing />} />
+        </Routes>
+        <div className="footer">
+          <Footer />
+        </div>
       </div>
-      {/* {entering && <Entrance />} */}
-
-      <Landing />
-      <Portfolio />
-      <div className="footer">
-        <Footer />
-      </div>
-    </div>
+    </HashRouter>
   );
 }
 

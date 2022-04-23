@@ -79,16 +79,14 @@ h1,
   .presentationWrapper {
     display: flex;
     justify-content: center;
-    align-items: center;
     text-align: center;
-    height: 90vh;
+    height: 100vh;
   }
   .presentation {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
     margin: 0;
 
     line-height: 2rem;

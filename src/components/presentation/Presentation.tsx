@@ -24,8 +24,8 @@ export const Presentation = () => {
       <div
         className={`presentation ${offset > offsetTrigger ? "gone-left" : ""}`}
       >
-        <h1 className="name"> Hi! i'm Nicolas</h1>
-        <h1 className="name"> a web developer</h1>
+        <h1 className="name"> Hi! I'm Nicolás</h1>
+        <h1 className="name"> a Developer</h1>
         <div className="socials">
           <div
             className="socialBtn"
