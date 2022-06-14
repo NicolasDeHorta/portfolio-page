@@ -24,7 +24,7 @@ export const Portfolio = () => {
     console.log(portfolioItems.length);
     portfolioItems.length > 0 &&
       portfolioItems.forEach((item) => observer.observe(item));
-  }, [portfolioItems.length]);
+  }, [portfolioItems.length, portfolioItems]);
 
   return (
     <div className="portfolioWrapper">
