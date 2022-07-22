@@ -1,7 +1,7 @@
 {
   "name": "personal-page",
   "version": "0.1.0",
-  "homepage": "https://nicolasdehorta.github.io/portfolio-page",
+  "homepage": "http://ndehorta.com",
   "private": false,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.3.0",
