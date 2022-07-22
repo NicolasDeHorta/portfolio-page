@@ -21,7 +21,6 @@ export const Portfolio = () => {
         threshold: 0.7,
       }
     );
-    console.log(portfolioItems.length);
     portfolioItems.length > 0 &&
       portfolioItems.forEach((item) => observer.observe(item));
   }, [portfolioItems.length]);
