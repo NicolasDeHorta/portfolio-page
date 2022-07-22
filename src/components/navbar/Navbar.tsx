@@ -8,7 +8,6 @@ interface Section {
 }
 
 const sections: Section[] = [
-  // { name: "Contact", path: "/contact" },
   { name: "About", path: "/about" },
 ];
 
@@ -20,9 +19,9 @@ export const Navbar = () => {
           <img src={logo} alt="logo" />
         </Link>
       </div>
-      {sections.map(({ name, path }) => {
+      {sections.map(({ name, path }, index) => {
         return (
-          <div className="navItem">
+          <div key={index} className="navItem">
             <Link to={path}>{name}</Link>
           </div>
         );

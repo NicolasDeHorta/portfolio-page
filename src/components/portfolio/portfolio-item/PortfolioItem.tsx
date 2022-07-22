@@ -53,8 +53,8 @@ export const PortfolioItem = ({
             </div>
           </p>
           <div className="portfolioItemStack">
-            {stack.map((stackItem) => (
-              <FontAwesomeIcon icon={stackItem} />
+            {stack.map((stackItem,index) => (
+              <FontAwesomeIcon key={index} icon={stackItem} />
             ))}
           </div>
         </div>
