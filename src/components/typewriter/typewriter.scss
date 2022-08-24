@@ -1,4 +1,10 @@
 .typewriter {
-  font-size: 5rem;
+  font-size: 4vw;
   height: 6rem;
+}
+
+@media (max-width: 800px) {
+  .typewriter {
+    font-size: 1.5rem;
+  }
 }
