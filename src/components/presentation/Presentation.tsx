@@ -5,6 +5,7 @@ import "./presentation.scss";
 import { useEffect, useState } from "react";
 import { Stack } from "../stack/Stack";
 import { faAnglesDown } from "@fortawesome/free-solid-svg-icons";
+import { Typewriter } from "../typewriter/Typewriter";
 
 export const Presentation = () => {
   const [offset, setOffset] = useState(0);
@@ -25,7 +26,7 @@ export const Presentation = () => {
         className={`presentation ${offset > offsetTrigger ? "gone-left" : ""}`}
       >
         <h1 className="name"> Hi! I'm Nicolás</h1>
-        <h1 className="name"> a Developer</h1>
+        <Typewriter />
         <div className="socials">
           <div
             className="socialBtn"

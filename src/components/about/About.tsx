@@ -46,37 +46,29 @@ export const About = () => {
         <span>
           <FontAwesomeIcon icon={faCode} /> &nbsp;Developer
         </span>
-        and also
+        and a
         <span>
           <FontAwesomeIcon icon={faFlask} /> <FontAwesomeIcon icon={faReact} />
           &nbsp;Chemical Engineer
         </span>
-        .{" "}
+        .
       </p>
       <p>
-        A long ago i had to decide between Chemical and Software Enginerering,
-        but ... why not both?{" "}
+        A long ago i had to decide to either be a Chemical Engineer or a Software Developer,
+        but ... why not both?
       </p>
       <p>
-        The story starts with{" "}
-        <span>
-          <FontAwesomeIcon icon={faPython} /> Python{" "}
-        </span>
-        , i wanted to get into Data science and Data analysis which i was really
-        passionate about, got to work at two big industrial companies as Data
-        analyst, i was really excited about combining my two passions.
-      </p>{" "}
+        The story started some years ago, i wanted to get into Data science and Data analysis which i really like, i got to work at two 
+        big industrial companies as a Data Analyst, i started to automate my reports and tasks to make my job easier, using Excel and some <span> <FontAwesomeIcon icon={faPython} /> Python</span>.
+      </p>
       <p>
-        {" "}
-        Later on i started a Web Development Bootcamp and really enjoyed it,
-        some months later started working as a
+        Later on i started Python and Web Development Bootcamps at Udemy and really enjoyed them, then i decided i wanted to work
+        as a software Developer and got hired at a local Software company as a
         <span>
           <FontAwesomeIcon icon={typescriptIcon} />
           <FontAwesomeIcon icon={faReact} /> React
         </span>
-        frontend developer at a Software company, and some time after that moved
-        from that project to another in the same company getting into fullstack
-        development featuring new tecnologies like
+         developer featuring some technologies like
         <span>
           <FontAwesomeIcon icon={faNodeJs} /> Node.js
         </span>
@@ -91,23 +83,25 @@ export const About = () => {
         .
       </p>
       <p>
-        I'm now still working at that Company, developing come projects on my
-        own and continue studying Computer engineering. Feel free to contact me
-        via{" "}
+        Nowadays im still working there, developing some projects on my
+        own and improving my skills. 
+        <br />  
+        Feel free to contact me
+        via
         <span>
           <a href="mailto:dehorta.n@gmail.com">
             <FontAwesomeIcon icon={faEnvelope} /> eMail
           </a>
         </span>
-        {/* through the{" "}
+        {/* through the
         <Link to="/contact" className="aboutLink">
-          {" "}
-          contact page{" "}
+          
+          contact page
         </Link> */}
-        or my LinkedIn at the{" "}
+        or my LinkedIn at the 
         <Link to="/" className="aboutLink">
-          {" "}
-          main page{" "}
+          &nbsp;
+           main page
         </Link>
         .
       </p>
