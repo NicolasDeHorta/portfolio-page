@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.45467e44.css",
+    "main.css": "/static/css/main.34536a6d.css",
     "main.js": "/static/js/main.9db2f1da.js",
     "static/media/spaceTurtle.gif": "/static/media/spaceTurtle.8566e9d1e81c955e3ec7.gif",
     "static/media/regulImg.gif": "/static/media/regulImg.ed130a702441d57b9df7.gif",
@@ -10,11 +10,11 @@
     "static/media/backgroundHexagons.jpg": "/static/media/backgroundHexagons.0f6527845d1b02a58507.jpg",
     "static/media/passwordsaver.jpeg": "/static/media/passwordsaver.0c394aafa8ecc3340dcb.jpeg",
     "index.html": "/index.html",
-    "main.45467e44.css.map": "/static/css/main.45467e44.css.map",
+    "main.34536a6d.css.map": "/static/css/main.34536a6d.css.map",
     "main.9db2f1da.js.map": "/static/js/main.9db2f1da.js.map"
   },
   "entrypoints": [
-    "static/css/main.45467e44.css",
+    "static/css/main.34536a6d.css",
     "static/js/main.9db2f1da.js"
   ]
 }
