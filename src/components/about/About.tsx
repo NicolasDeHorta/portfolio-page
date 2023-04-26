@@ -2,6 +2,7 @@ import {
   faNodeJs,
   faPython,
   faReact,
+  faSass,
 } from "@fortawesome/free-brands-svg-icons";
 import {
   faCode,
@@ -42,11 +43,11 @@ export const About = () => {
   return (
     <div className="textWrapper">
       <p>
-        My name is Nicolas, i'm a
+        Hello there,<br /> my name is Nicolas, i'm a
         <span>
-          <FontAwesomeIcon icon={faCode} /> &nbsp;Developer
+          <FontAwesomeIcon icon={faCode} /> Developer
         </span>
-        and a
+        and
         <span>
           <FontAwesomeIcon icon={faFlask} /> <FontAwesomeIcon icon={faReact} />
           &nbsp;Chemical Engineer
@@ -54,57 +55,40 @@ export const About = () => {
         .
       </p>
       <p>
-        A long ago i had to decide to either be a Chemical Engineer or a Software Developer,
-        but ... why not both?
+        Passionate about leveraging technology to solve problems and pushing the limits to achieve goals, experience in the process/chemical engineering industry, in data analysis using <span> <FontAwesomeIcon icon={faDatabase} /> databases</span>and
+        <span>
+          <FontAwesomeIcon icon={faPython} /> Python
+        </span> 
+        </p>
+        <p>
+        With a solid tech stack including
+        <span> <FontAwesomeIcon icon={faReact} /> React </span> 
+        <span> <FontAwesomeIcon icon={typescriptIcon} /> Typescript </span>, 
+        <span> <FontAwesomeIcon icon={faSass} /> SASS </span>, 
+        <span> <FontAwesomeIcon icon={faDatabase} /> databases </span>, 
+        <span> <FontAwesomeIcon icon={faNodeJs} /> node.js </span> and
+        <span> <FontAwesomeIcon icon={faGrapQl} /> GraphQL </span> 
+        for web development.
       </p>
       <p>
-        The story started some years ago, i wanted to get into Data science and Data analysis which i really like, i got to work at two 
-        big industrial companies as a Data Analyst, i started to automate my reports and tasks to make my job easier, using Excel and some <span> <FontAwesomeIcon icon={faPython} /> Python</span>.
-      </p>
-      <p>
-        Later on i started Python and Web Development Bootcamps at Udemy and really enjoyed them, then i decided i wanted to work
-        as a software Developer and got hired at a local Software company as a
-        <span>
-          <FontAwesomeIcon icon={typescriptIcon} />
-          <FontAwesomeIcon icon={faReact} /> React
-        </span>
-         developer featuring some technologies like
-        <span>
-          <FontAwesomeIcon icon={faNodeJs} /> Node.js
-        </span>
-        ,
-        <span>
-          <FontAwesomeIcon icon={faDatabase} /> Postgres
-        </span>
-        and
-        <span>
-          <FontAwesomeIcon icon={faGrapQl} /> GraphQL
-        </span>
-        .
-      </p>
-      <p>
-        Nowadays im still working there, developing some projects on my
-        own and improving my skills. 
-        <br />  
-        Feel free to contact me
-        via
+        Feel free to get in touch via
         <span>
           <a href="mailto:dehorta.n@gmail.com">
-            <FontAwesomeIcon icon={faEnvelope} /> eMail
+            <FontAwesomeIcon icon={faEnvelope} /> Email
           </a>
         </span>
-        {/* through the
-        <Link to="/contact" className="aboutLink">
-          
-          contact page
-        </Link> */}
         or my LinkedIn at the 
         <Link to="/" className="aboutLink">
-          &nbsp;
-           main page
+            &nbsp;main page
         </Link>
         .
       </p>
+
+      <p className="aboutFooter">
+        You can click on the logo to go back, <br/>
+        Have a wonderful day.
+      </p>
+      
     </div>
   );
 };

@@ -4,7 +4,7 @@ import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import "./presentation.scss";
 import { useEffect, useState } from "react";
 import { Stack } from "../stack/Stack";
-import { faAnglesDown } from "@fortawesome/free-solid-svg-icons";
+import { faAnglesDown, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { Typewriter } from "../typewriter/Typewriter";
 
 export const Presentation = () => {
@@ -39,6 +39,15 @@ export const Presentation = () => {
             </span>
             GitHub
           </div>
+          <a className="socialBtn" href="mailto:dehorta.n@gmail.com">
+          <div>
+            <span>
+              <FontAwesomeIcon icon={faEnvelope} />
+            </span>
+            Email
+          </div>
+            </a>
+            
           <div
             className="socialBtn"
             onClick={() =>
