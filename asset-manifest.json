@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.44660eb5.css",
-    "main.js": "/static/js/main.bd85e048.js",
+    "main.css": "/static/css/main.c7c83962.css",
+    "main.js": "/static/js/main.d945f175.js",
     "static/media/spaceTurtle.gif": "/static/media/spaceTurtle.8566e9d1e81c955e3ec7.gif",
     "static/media/regulImg.gif": "/static/media/regulImg.ed130a702441d57b9df7.gif",
     "static/media/eMercadoImg.png": "/static/media/eMercadoImg.2027c661b9d2f2bc282f.png",
@@ -10,11 +10,11 @@
     "static/media/backgroundHexagons.jpg": "/static/media/backgroundHexagons.0f6527845d1b02a58507.jpg",
     "static/media/passwordsaver.jpeg": "/static/media/passwordsaver.0c394aafa8ecc3340dcb.jpeg",
     "index.html": "/index.html",
-    "main.44660eb5.css.map": "/static/css/main.44660eb5.css.map",
-    "main.bd85e048.js.map": "/static/js/main.bd85e048.js.map"
+    "main.c7c83962.css.map": "/static/css/main.c7c83962.css.map",
+    "main.d945f175.js.map": "/static/js/main.d945f175.js.map"
   },
   "entrypoints": [
-    "static/css/main.44660eb5.css",
-    "static/js/main.bd85e048.js"
+    "static/css/main.c7c83962.css",
+    "static/js/main.d945f175.js"
   ]
 }
