@@ -1,15 +1,5 @@
-import {
-  faNodeJs,
-  faPython,
-  faReact,
-  faSass,
-} from "@fortawesome/free-brands-svg-icons";
-import {
-  faCode,
-  faDatabase,
-  faEnvelope,
-  faFlask,
-} from "@fortawesome/free-solid-svg-icons";
+import { faNodeJs, faPython, faReact, faSass } from "@fortawesome/free-brands-svg-icons";
+import { faCode, faDatabase, faEnvelope, faFlask } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
@@ -43,52 +33,45 @@ export const About = () => {
   return (
     <div className="textWrapper">
       <p>
-        Hello there,<br /> my name is Nicolas, i'm a
-        <span>
-          <FontAwesomeIcon icon={faCode} /> Developer
-        </span>
+        Hello there,
+        <br /> my name is Nicolas, i'm a
+        <FontAwesomeIcon className="icon" icon={faCode} /> Developer and also a
+        <FontAwesomeIcon className="icon" icon={faFlask} />
+        &nbsp;Chemical Engineer .
+      </p>
+      <p>
+        Passionate about leveraging technology to solve problems and pushing the limits to achieve goals, experience in
+        the process/chemical engineering industry, in data analysis using{" "}
+          <FontAwesomeIcon className="icon" icon={faDatabase} /> databases
         and
-        <span>
-          <FontAwesomeIcon icon={faFlask} /> <FontAwesomeIcon icon={faReact} />
-          &nbsp;Chemical Engineer
-        </span>
-        .
+          <FontAwesomeIcon className="icon" icon={faPython} /> Python
       </p>
       <p>
-        Passionate about leveraging technology to solve problems and pushing the limits to achieve goals, experience in the process/chemical engineering industry, in data analysis using <span> <FontAwesomeIcon icon={faDatabase} /> databases</span>and
-        <span>
-          <FontAwesomeIcon icon={faPython} /> Python
-        </span> 
-        </p>
-        <p>
         With a solid tech stack including
-        <span> <FontAwesomeIcon icon={faReact} /> React </span> 
-        <span> <FontAwesomeIcon icon={typescriptIcon} /> Typescript </span>, 
-        <span> <FontAwesomeIcon icon={faSass} /> SASS </span>, 
-        <span> <FontAwesomeIcon icon={faDatabase} /> databases </span>, 
-        <span> <FontAwesomeIcon icon={faNodeJs} /> node.js </span> and
-        <span> <FontAwesomeIcon icon={faGrapQl} /> GraphQL </span> 
-        for web development.
+        <FontAwesomeIcon className="icon" icon={faReact} />
+        React, <FontAwesomeIcon className="icon" icon={typescriptIcon} />
+        Typescript, <FontAwesomeIcon className="icon" icon={faSass} />
+        SASS, <FontAwesomeIcon className="icon" icon={faDatabase} />
+        databases, <FontAwesomeIcon className="icon" icon={faNodeJs} />
+        node.js and <FontAwesomeIcon className="icon" icon={faGrapQl} />
+        GraphQL for web development.
       </p>
       <p>
-        Feel free to get in touch via
-        <span>
+        Feel free to get in touch via 
           <a href="mailto:dehorta.n@gmail.com">
-            <FontAwesomeIcon icon={faEnvelope} /> Email
+            <FontAwesomeIcon className="icon" icon={faEnvelope} /> Email
           </a>
-        </span>
-        or my LinkedIn at the 
+          &nbsp;or my LinkedIn at the
         <Link to="/" className="aboutLink">
-            &nbsp;main page
+          &nbsp;main page
         </Link>
         .
       </p>
 
       <p className="aboutFooter">
-        You can click on the logo to go back, <br/>
+        You can click on the logo to go back, <br />
         Have a wonderful day.
       </p>
-      
     </div>
   );
 };

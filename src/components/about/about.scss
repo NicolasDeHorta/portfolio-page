@@ -3,9 +3,13 @@
   font-size: 2rem;
   min-height: 90vh;
 
-  span {
+  .icon {
     color: rgb(48, 195, 253);
-    margin-inline: 0.5rem;
+    margin-inline: 0.3rem;
+    white-space: nowrap;
+  }
+
+  span {
     white-space: nowrap;
   }
 }
@@ -14,19 +18,34 @@
   font-size: 2rem;
 }
 
-@media (max-width: 800px) {
-  .textWrapper {
-    text-align: center;
-    font-size: 1.3rem;
-  }
-
-  .aboutLink {
-    font-size: 1.3rem;
-  }
-}
 
 .aboutFooter {
   padding-top: 3rem;
   font-size: 20px;
   opacity: 0.3;
+}
+
+@media (max-width: 800px) {
+  .textWrapper {
+    text-align: center;
+    font-size: 1rem;
+    width: 90vw;
+
+    a {
+      font-size: 1rem;
+    }
+
+    p {
+      text-align: left;;
+      white-space: wrap;
+    }
+  }
+
+  .aboutLink {
+    font-size: 1rem;
+  }
+
+  .aboutFooter {
+    font-size: 1rem;
+  }
 }

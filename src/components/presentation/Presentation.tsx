@@ -22,41 +22,26 @@ export const Presentation = () => {
 
   return (
     <div className="presentationWrapper">
-      <div
-        className={`presentation ${offset > offsetTrigger ? "gone-left" : ""}`}
-      >
+      <div className={`presentation ${offset > offsetTrigger ? "gone-left" : ""}`}>
         <h1 className="name"> Hi! I'm Nicolás</h1>
         <Typewriter />
         <div className="socials">
-          <div
-            className="socialBtn"
-            onClick={() =>
-              window.open("https://github.com/NicolasDeHorta", "_blank")
-            }
-          >
+          <div className="socialBtn" onClick={() => window.open("https://github.com/NicolasDeHorta", "_blank")}>
             <span>
               <FontAwesomeIcon icon={faGithub} />
             </span>
             GitHub
           </div>
           <a className="socialBtn" href="mailto:dehorta.n@gmail.com">
-          <div>
-            <span>
-              <FontAwesomeIcon icon={faEnvelope} />
-            </span>
-            Email
-          </div>
-            </a>
-            
+            <div>
+                <FontAwesomeIcon icon={faEnvelope} />
+              Email
+            </div>
+          </a>
+
           <div
             className="socialBtn"
-            onClick={() =>
-              window.open(
-                "https://www.linkedin.com/in/nicolas-de-horta-b37a48141/",
-                "_blank"
-              )
-            }
-          >
+            onClick={() => window.open("https://www.linkedin.com/in/nicolas-de-horta-b37a48141/", "_blank")}>
             <span>
               <FontAwesomeIcon icon={faLinkedinIn} />
             </span>
@@ -64,9 +49,7 @@ export const Presentation = () => {
           </div>
         </div>
       </div>
-      <div
-        className={`presentation ${offset > offsetTrigger ? "gone-right" : ""}`}
-      >
+      <div className={`presentation ${offset > offsetTrigger ? "gone-right" : ""}`}>
         <Stack />
       </div>
       <div
@@ -76,8 +59,7 @@ export const Presentation = () => {
             top: window.innerHeight,
             behavior: "smooth",
           });
-        }}
-      >
+        }}>
         <FontAwesomeIcon icon={faAnglesDown} />
       </div>
     </div>
