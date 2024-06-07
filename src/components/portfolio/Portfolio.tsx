@@ -28,7 +28,7 @@ export const Portfolio = () => {
   return (
     <div className="portfolioWrapper">
       {portfolioData.map(
-        ({ img, description, name, id, repo, deploy, stack }) => {
+        ({ img, description, name, id, repo, deploy, stack, live }) => {
           return (
             <PortfolioItem
               key={id}
@@ -38,6 +38,7 @@ export const Portfolio = () => {
               deploy={deploy}
               stack={stack}
               repo={repo}
+              live={live}
             />
           );
         }

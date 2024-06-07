@@ -1,8 +1,8 @@
 import minesweeperImg from "./assets/img/minesweeperImg.gif";
-import regulImg from "./assets/img/regulImg.gif";
+import regulImg from "./assets/img/regulImg.jpg";
 import spaceTurtle from "./assets/img/spaceTurtle.gif";
-import eMercado from "./assets/img/eMercadoImg.png";
-import morseWebapp from "./assets/img/morseWebapp.jpeg";
+//import eMercado from "./assets/img/eMercadoImg.png";
+//import morseWebapp from "./assets/img/morseWebapp.jpeg";
 import pwdSaver from "./assets/img/passwordsaver.jpeg";
 
 import {
@@ -28,6 +28,16 @@ const typescriptIcon: any = {
 
 export const portfolioData = [
   {
+    id: 1,
+    name: "Cambio Regul S.A.",
+    img: regulImg,
+    description:
+      "A sleek currency exchange website featuring a front page with an interactive contact form, an admin dashboard for seamless management, and Firebase-backed storage for reliable, real-time data synchronization.",
+    deploy: "https://cambioregulsa.com",
+    live: true,
+    stack: [faJs, faSass, faReact],
+  },
+  {
     id: 0,
     name: "Minesweeper",
     img: minesweeperImg,
@@ -38,16 +48,6 @@ export const portfolioData = [
     stack: [typescriptIcon, faSass, faReact],
   },
   {
-    id: 1,
-    name: "RegulApp",
-    img: regulImg,
-    description:
-      "A handcrafted website for a currency exchange business, using Firebase, firestore, React, JavaScript and SASS, where the owner can upload files, documents and change currency prices by logging in with an user. Costumers also can send mails via the Contact page",
-    deploy: "https://nicolasdehorta.github.io/regul-app/",
-    repo: "https://github.com/NicolasDeHorta/regul-app",
-    stack: [faJs, faSass, faReact],
-  },
-  {
     id: 2,
     name: "Space Turtle",
     img: spaceTurtle,
@@ -56,16 +56,16 @@ export const portfolioData = [
     repo: "https://github.com/NicolasDeHorta/turtle_invaders",
     stack: [faPython],
   },
-  {
-    id: 3,
-    name: "eMercado",
-    img: eMercado,
-    description:
-      "Mock eCommerce website created for JAP program using plain HTML, CSS, JS and jQuery. Fetching data from some endpoints given by the program, capability of uploading profile img and implementation of OAuth2.0",
-    deploy: "https://nicolasdehorta.github.io/ecommerce-jap/index.html",
-    repo: "https://github.com/NicolasDeHorta/ecommerce-jap",
-    stack: [faJs, faHtml5, faCss3],
-  },
+  //{
+  //  id: 3,
+  //  name: "eMercado",
+  //  img: eMercado,
+  //  description:
+  //    "Mock eCommerce website created for JAP program using plain HTML, CSS, JS and jQuery. Fetching data from some endpoints given by the program, capability of uploading profile img and implementation of OAuth2.0",
+  //  deploy: "https://nicolasdehorta.github.io/ecommerce-jap/index.html",
+  //  repo: "https://github.com/NicolasDeHorta/ecommerce-jap",
+  //  stack: [faJs, faHtml5, faCss3],
+  //},
   {
     id: 4,
     name: "Password Saver",
@@ -75,13 +75,13 @@ export const portfolioData = [
     repo: "https://github.com/NicolasDeHorta/passwordsaver",
     stack: [faPython],
   },
-  {
-    id: 5,
-    name: "Morse Webapp",
-    img: morseWebapp,
-    description:
-      "Silly hacker themed, Python / Flask / Jinja2 based morse decoder, where you can translate text to morse or the other way around.",
-    repo: "https://github.com/NicolasDeHorta/morse-webapp",
-    stack: [faPython],
-  },
+  //{
+  //  id: 5,
+  //  name: "Morse Webapp",
+  //  img: morseWebapp,
+  //  description:
+  //    "Silly hacker themed, Python / Flask / Jinja2 based morse decoder, where you can translate text to morse or the other way around.",
+  //  repo: "https://github.com/NicolasDeHorta/morse-webapp",
+  //  stack: [faPython],
+  //},
 ];

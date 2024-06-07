@@ -7,6 +7,7 @@ import { About } from "./components/about/About";
 import "./App.scss";
 
 function App() {
+  console.log(process.env.NETLIFY_AUTH_TOKEN)
   return (
     <HashRouter>
       <div className="App">

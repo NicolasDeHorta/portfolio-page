@@ -8,6 +8,7 @@ interface PortfolioItemProps {
   name: string;
   deploy?: string;
   repo?: string;
+  live?: boolean;
   stack: any[];
 }
 
@@ -18,6 +19,7 @@ export const PortfolioItem = ({
   deploy,
   stack,
   repo,
+  live
 }: PortfolioItemProps) => {
   return (
     <div className="portfolioItemWrapper">
@@ -47,7 +49,7 @@ export const PortfolioItem = ({
                   <span>
                     <FontAwesomeIcon icon={faPlay} />
                   </span>
-                  Try it !
+                  {live ? "See it live" : "Try it !"}
                 </div>
               )}
             </div>
