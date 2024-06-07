@@ -4,6 +4,7 @@ import spaceTurtle from "./assets/img/spaceTurtle.gif";
 //import eMercado from "./assets/img/eMercadoImg.png";
 //import morseWebapp from "./assets/img/morseWebapp.jpeg";
 import pwdSaver from "./assets/img/passwordsaver.jpeg";
+import ColorBrainImg from "./assets/img/colorBrain.jpg";
 
 import {
   faCss3,
@@ -38,6 +39,16 @@ export const portfolioData = [
     stack: [faJs, faSass, faReact],
   },
   {
+    id: 6,
+    name: "Color BrAIn",
+    img: ColorBrainImg,
+    description:
+      "Powered by AI, LLaMa3 70b LLM along with LangChain, Color BrAIn is a specialized website that generates color palettes based on user-inputted concepts or ideas. It is perfect for designers and web developers, providing aesthetically pleasing and relevant color schemes tailored to your needs.",
+    deploy: "https://color-brain.netlify.app",
+    live: true,
+    stack: [faJs, faSass, faReact],
+  },
+  {
     id: 0,
     name: "Minesweeper",
     img: minesweeperImg,
@@ -66,15 +77,15 @@ export const portfolioData = [
   //  repo: "https://github.com/NicolasDeHorta/ecommerce-jap",
   //  stack: [faJs, faHtml5, faCss3],
   //},
-  {
-    id: 4,
-    name: "Password Saver",
-    img: pwdSaver,
-    description:
-      "Python and Tkinter offline password storage, with a simple UI you can store, query, edit (and random generate) your passwords really easy to use.",
-    repo: "https://github.com/NicolasDeHorta/passwordsaver",
-    stack: [faPython],
-  },
+  //{
+  //  id: 4,
+  //  name: "Password Saver",
+  //  img: pwdSaver,
+  //  description:
+  //    "Python and Tkinter offline password storage, with a simple UI you can store, query, edit (and random generate) your passwords really easy to use.",
+  //  repo: "https://github.com/NicolasDeHorta/passwordsaver",
+  //  stack: [faPython],
+  //},
   //{
   //  id: 5,
   //  name: "Morse Webapp",
