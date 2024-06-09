@@ -26,23 +26,26 @@ export const Portfolio = () => {
   }, [portfolioItems.length]);
 
   return (
-    <div className="portfolioWrapper">
-      {portfolioData.map(
-        ({ img, description, name, id, repo, deploy, stack, live }) => {
-          return (
-            <PortfolioItem
-              key={id}
-              name={name}
-              img={img}
-              text={description}
-              deploy={deploy}
-              stack={stack}
-              repo={repo}
-              live={live}
-            />
-          );
-        }
-      )}
-    </div>
+    <section className="portfolio-section">
+      <h1 className="subtitle">Client & projects</h1>
+      <div className="portfolioWrapper">
+        {portfolioData.map(
+          ({ img, description, name, id, repo, deploy, stack, live }) => {
+            return (
+              <PortfolioItem
+                key={id}
+                name={name}
+                img={img}
+                text={description}
+                deploy={deploy}
+                stack={stack}
+                repo={repo}
+                live={live}
+              />
+            );
+          }
+        )}
+      </div>
+    </section>
   );
 };

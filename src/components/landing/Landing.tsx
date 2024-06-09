@@ -1,3 +1,4 @@
+import { Experience } from "../experience/Experience";
 import { Portfolio } from "../portfolio/Portfolio";
 import { Presentation } from "../presentation/Presentation";
 
@@ -7,6 +8,7 @@ export const Landing = () => {
   return (
     <>
       <Presentation />
+      <Experience />
       <Portfolio />
     </>
   );
