@@ -1,9 +1,11 @@
 import minesweeperImg from "./assets/img/minesweeperImg.gif";
 import regulImg from "./assets/img/regulImg.jpg";
-import spaceTurtle from "./assets/img/spaceTurtle.gif";
+// import spaceTurtle from "./assets/img/spaceTurtle.gif";
 //import eMercado from "./assets/img/eMercadoImg.png";
 //import morseWebapp from "./assets/img/morseWebapp.jpeg";
-import pwdSaver from "./assets/img/passwordsaver.jpeg";
+// import pwdSaver from "./assets/img/passwordsaver.jpeg";
+import trucoImg from "./assets/img/truco-main.png";
+import trucoImg2 from "./assets/img/truco-rules.png";
 import ColorBrainImg from "./assets/img/colorBrain.jpg";
 
 import {
@@ -39,6 +41,16 @@ export const portfolioData = [
     stack: [faJs, faSass, faReact],
   },
   {
+    id: 0,
+    name: "Truco Score",
+    mobileImgs: [trucoImg, trucoImg2],
+    description:
+      "A mobile-friendly web app for tracking Truco scores, perfect for daily players as well as beginners and returning players. With localStorage-based functionality, it remembers your score between sessions, and includes helpful features like card rankings for quick reference.",
+    deploy: "https://truco.ndehorta.com",
+    repo: "https://github.com/NicolasDeHorta/truco-score",
+    stack: [typescriptIcon, faReact],
+  },
+  {
     id: 6,
     name: "Color BrAIn",
     img: ColorBrainImg,
@@ -58,15 +70,15 @@ export const portfolioData = [
     repo: "https://github.com/NicolasDeHorta/minesweeper",
     stack: [typescriptIcon, faSass, faReact],
   },
-  {
-    id: 2,
-    name: "Space Turtle",
-    img: spaceTurtle,
-    description:
-      "A game using Python-PyGame inspired in the good old Space-Invaders. Maybe not the hero we deserve... but the hero we have, a really, really slow one",
-    repo: "https://github.com/NicolasDeHorta/turtle_invaders",
-    stack: [faPython],
-  },
+  // {
+  //   id: 2,
+  //   name: "Space Turtle",
+  //   img: spaceTurtle,
+  //   description:
+  //     "A game using Python-PyGame inspired in the good old Space-Invaders. Maybe not the hero we deserve... but the hero we have, a really, really slow one",
+  //   repo: "https://github.com/NicolasDeHorta/turtle_invaders",
+  //   stack: [faPython],
+  // },
   //{
   //  id: 3,
   //  name: "eMercado",

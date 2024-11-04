@@ -46,10 +46,31 @@
 .portfolioItemContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  place-items: center;
 
-  img {
+  .singleImg {
     width: 80%;
     object-fit: cover;
+    border-radius: 10px;
+    transition: box-shadow 300ms ease-in-out;
+
+    &:hover {
+      box-shadow: 10px 10px 10px black;
+    }
+  }
+}
+
+.mobileImgs {
+  display: flex;
+  gap: 30px;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+
+  .mobileImg {
+    width: 40%;
+    border: gray 1px solid;
+    object-fit:contain;
     border-radius: 10px;
     transition: box-shadow 300ms ease-in-out;
 

@@ -3,7 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay, faSearch } from "@fortawesome/free-solid-svg-icons";
 
 interface PortfolioItemProps {
-  img: string;
+  img?: string;
+  mobileImgs?: string[];
   text: string;
   name: string;
   deploy?: string;
@@ -14,6 +15,7 @@ interface PortfolioItemProps {
 
 export const PortfolioItem = ({
   img,
+  mobileImgs,
   text,
   name,
   deploy,
@@ -25,7 +27,10 @@ export const PortfolioItem = ({
     <div className="portfolioItemWrapper">
       <h2>{name}</h2>
       <div className="portfolioItemContainer">
-        <img src={img} alt="portfolio item" />
+        {img && <img className="singleImg" src={img} alt="portfolio item" />}
+        {mobileImgs && <div className="mobileImgs">
+          {mobileImgs.map(img => <img className="mobileImg" src={img} alt="portfolio item" />)}
+        </div>}
         <div className="leftContainer">
           <p className="portfolioItemText">{text}</p>
           <p>
@@ -55,7 +60,7 @@ export const PortfolioItem = ({
             </div>
           </p>
           <div className="portfolioItemStack">
-            {stack.map((stackItem,index) => (
+            {stack.map((stackItem, index) => (
               <FontAwesomeIcon key={index} icon={stackItem} />
             ))}
           </div>

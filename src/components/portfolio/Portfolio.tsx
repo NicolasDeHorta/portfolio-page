@@ -30,12 +30,13 @@ export const Portfolio = () => {
       <h1 className="subtitle">Client & projects</h1>
       <div className="portfolioWrapper">
         {portfolioData.map(
-          ({ img, description, name, id, repo, deploy, stack, live }) => {
+          ({ img, mobileImgs, description, name, id, repo, deploy, stack, live }) => {
             return (
               <PortfolioItem
                 key={id}
                 name={name}
-                img={img}
+                img={img || undefined}
+                mobileImgs={mobileImgs || undefined}
                 text={description}
                 deploy={deploy}
                 stack={stack}
