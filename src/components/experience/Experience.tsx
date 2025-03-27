@@ -5,16 +5,23 @@ import { ExperienceCard, ExperienceInfo } from "./experienceCard/ExperienceCard"
 
 const experienceData: ExperienceInfo[] = [
   {
+    companyName: "Marvik",
+    from: "Jan-2025",
+    to: "Present",
+    position: "ML Engineer",
+    description: "Building end to end ML solutions for the company."
+  },
+  {
     companyName: "OrangeLoops",
     from: "Feb-2024",
-    to: "Present",
+    to: "Jan-2025",
     position: "Research & Development",
     description: "Researching AI-powered applications. Working with OpenAI Python API, LLaMa3, LangChain, and Embeddings for Retrieval Augmented Generation."
   },
   {
     companyName: "OrangeLoops",
     from: "Nov-2021",
-    to: "Present",
+    to: "Jan-2025",
     position: "Web Developer",
     description: "Developed and maintained dynamic applications using React.js, TypeScript, GraphQL, and Next.js. Performed backend tasks utilizing Node.js and SQL, ensuring seamless integration."
   },

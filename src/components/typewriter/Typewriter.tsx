@@ -7,10 +7,10 @@ export const Typewriter = () => {
   return (
     <div className="typewriter">
       <Typ
-        words={["Engineer", "Web Developer"]}
+        words={["Engineer", "Developer"]}
         loop
         delaySpeed={2200}
-        deleteSpeed={40}
+        deleteSpeed={30}
         cursor
         cursorStyle={"_"}
       />
