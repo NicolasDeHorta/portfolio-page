@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.12cab228.css",
-    "main.js": "/static/js/main.bfd3c3fb.js",
+    "main.js": "/static/js/main.928fde00.js",
     "static/media/regulImg.jpg": "/static/media/regulImg.e5847125460677fd2faa.jpg",
     "static/media/truco-rules.png": "/static/media/truco-rules.a6e517d63f651efe5032.png",
     "static/media/truco-main.png": "/static/media/truco-main.5bba95c5eece618a3b66.png",
@@ -10,10 +10,10 @@
     "static/media/backgroundHexagons.jpg": "/static/media/backgroundHexagons.0f6527845d1b02a58507.jpg",
     "index.html": "/index.html",
     "main.12cab228.css.map": "/static/css/main.12cab228.css.map",
-    "main.bfd3c3fb.js.map": "/static/js/main.bfd3c3fb.js.map"
+    "main.928fde00.js.map": "/static/js/main.928fde00.js.map"
   },
   "entrypoints": [
     "static/css/main.12cab228.css",
-    "static/js/main.bfd3c3fb.js"
+    "static/js/main.928fde00.js"
   ]
 }
