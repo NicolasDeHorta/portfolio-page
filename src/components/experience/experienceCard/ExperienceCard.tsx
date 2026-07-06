@@ -1,25 +1,40 @@
-import React from "react";
-
 import "./experience-card.scss";
 
 export interface ExperienceInfo {
-  companyName: string,
-  position: string,
-  from: string,
-  to: string,
-  description: string,
+  companyName: string;
+  position: string;
+  from: string;
+  to: string;
+  description: string;
+  tech: string[];
+  current?: boolean;
 }
 
-export const ExperienceCard = ({ item: { companyName, position, from, to, description } }: { item: ExperienceInfo }) => {
+export const ExperienceCard = ({
+  item: { companyName, position, from, to, description, tech, current },
+}: {
+  item: ExperienceInfo;
+}) => {
   return (
-    <div className="experience-card">
-      <div className="experience-card-header">
-        <div className="experience-position">{position}</div>
-        <div className="experience-name">{companyName}</div>
-        <div className="experience-period">{from} - {to}</div>
+    <div className="job reveal">
+      <div className="when">
+        <span className={current ? "now" : undefined}>
+          {from} — {to}
+        </span>
       </div>
-      <div className="experience-card-body">
-        {description}
+      <div>
+        <div className="role-row">
+          <h3>{position}</h3>
+          <span className="company">{companyName}</span>
+        </div>
+        <p>{description}</p>
+        <div className="chips">
+          {tech.map((t) => (
+            <span className="chip" key={t}>
+              {t}
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   );

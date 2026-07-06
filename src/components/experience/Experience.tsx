@@ -1,52 +1,68 @@
-import React from "react";
-
-import "./experience.scss";
 import { ExperienceCard, ExperienceInfo } from "./experienceCard/ExperienceCard";
 
 const experienceData: ExperienceInfo[] = [
   {
     companyName: "Marvik",
-    from: "Jan-2025",
-    to: "Present",
-    position: "ML Engineer",
-    description: "Building end to end ML solutions for the company."
+    from: "2025",
+    to: "Now",
+    current: true,
+    position: "Sr. ML Engineer",
+    description:
+      "Building end-to-end ML solutions — neural networks, recommender systems and LLM agents, deployed and running in production.",
+    tech: ["Python", "Neural Networks", "RecSys", "Agents", "AWS"],
   },
   {
     companyName: "OrangeLoops",
-    from: "Feb-2024",
-    to: "Jan-2025",
+    from: "2024",
+    to: "2025",
     position: "Research & Development",
-    description: "Researching AI-powered applications. Working with OpenAI Python API, LLaMa3, LangChain, and Embeddings for Retrieval Augmented Generation."
+    description:
+      "AI-powered applications with LangChain and embeddings for Retrieval-Augmented Generation, working across hosted and open-source LLMs.",
+    tech: ["LLMs", "LangChain", "Embeddings", "RAG"],
   },
   {
     companyName: "OrangeLoops",
-    from: "Nov-2021",
-    to: "Jan-2025",
+    from: "2021",
+    to: "2025",
     position: "Web Developer",
-    description: "Developed and maintained dynamic applications using React.js, TypeScript, GraphQL, and Next.js. Performed backend tasks utilizing Node.js and SQL, ensuring seamless integration."
+    description:
+      "Dynamic apps in React, TypeScript, GraphQL and Next.js, with Node.js and SQL on the backend for seamless integration.",
+    tech: ["React", "TypeScript", "GraphQL", "Next.js", "Node.js"],
   },
   {
-    companyName: "BADER International - Uruguay",
+    companyName: "BADER International",
     from: "2020",
     to: "2021",
     position: "Supply Chain Data Analyst",
-    description: "Conducted production planning based on analysis of production and logistics data, leading the technological innovation of the sector. Assisted the supply chain department using Excel, SQL and Python for innovation, automating tasks and reporting."
+    description:
+      "Production planning from logistics data; led the sector's tech innovation, automating reporting with Excel, SQL and Python.",
+    tech: ["SQL", "Python", "Automation"],
   },
   {
-    companyName: "SAMAN - Uruguay",
+    companyName: "SAMAN",
     from: "2016",
     to: "2017",
     position: "Data Analyst",
-    description: "Conducted production planning based on analysis of production and logistics data for all plants in the country. Utilized Excel, SQL, and Python for data analysis and automated reporting."
-  }
-]
+    description:
+      "Production planning across every plant in the country, with SQL and Python for analysis and automated reporting.",
+    tech: ["SQL", "Python", "Reporting"],
+  },
+];
 
 export const Experience = () => {
   return (
-    <section className="experience-section">
-      <h1 className="subtitle">My Experience</h1>
-      <div className="experience-list">
-        {experienceData.map(e => <ExperienceCard item={e} />)}
+    <section className="block" id="work">
+      <div className="wrap">
+        <div className="sec-head">
+          <h2>Work</h2>
+          <span className="rule" />
+          <span className="count">2016 → now</span>
+        </div>
+        <div className="experience-list">
+          {experienceData.map((e, i) => (
+            <ExperienceCard key={i} item={e} />
+          ))}
+        </div>
       </div>
     </section>
   );

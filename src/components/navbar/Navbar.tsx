@@ -1,31 +1,47 @@
-import { Link } from "react-router-dom";
-import logo from "../../assets/img/logoNDHsquare.png";
-import "./navbar.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import { useTheme } from "../../hooks/useTheme";
+import { featureFlags } from "../../featureFlags";
 
-interface Section {
-  path: string;
+interface NavLink {
   name: string;
+  href: string;
+  enabled?: boolean;
 }
 
-const sections: Section[] = [
-  { name: "About", path: "/about" },
-];
+const links: NavLink[] = [
+  { name: "Work", href: "#work" },
+  { name: "Projects", href: "#projects", enabled: featureFlags.projects },
+  { name: "Toolbox", href: "#toolbox" },
+  { name: "Contact", href: "#contact" },
+].filter((link) => link.enabled !== false);
 
 export const Navbar = () => {
+  const { theme, toggle } = useTheme();
+
   return (
-    <div className="navbar">
-      <div className="navLogo">
-        <Link to="/">
-          <img src={logo} alt="logo" />
-        </Link>
-      </div>
-      {sections.map(({ name, path }, index) => {
-        return (
-          <div key={index} className="navItem">
-            <Link to={path}>{name}</Link>
+    <nav className="nav">
+      <div className="nav-inner">
+        <a className="brand" href="#top">
+          <span className="mark">N</span> ndehorta
+        </a>
+        <div className="nav-right">
+          <div className="nav-links">
+            {links.map(({ name, href }) => (
+              <a key={href} href={href}>
+                {name}
+              </a>
+            ))}
           </div>
-        );
-      })}
-    </div>
+          <button
+            className="toggle"
+            onClick={toggle}
+            aria-label={theme === "dark" ? "Switch to light theme" : "Switch to dark theme"}
+          >
+            <FontAwesomeIcon icon={theme === "dark" ? faSun : faMoon} />
+          </button>
+        </div>
+      </div>
+    </nav>
   );
 };

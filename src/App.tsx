@@ -1,28 +1,30 @@
-import { HashRouter, Route, Routes } from "react-router-dom";
-import { Landing } from "./components/landing/Landing";
-import { Footer } from "./components/footer/Footer";
 import { Navbar } from "./components/navbar/Navbar";
-import { About } from "./components/about/About";
+import { Hero } from "./components/hero/Hero";
+import { Capabilities } from "./components/capabilities/Capabilities";
+import { Experience } from "./components/experience/Experience";
+import { Projects } from "./components/projects/Projects";
+import { Toolbox } from "./components/toolbox/Toolbox";
+import { Footer } from "./components/footer/Footer";
+import { useReveal } from "./hooks/useReveal";
+import { featureFlags } from "./featureFlags";
 
 import "./App.scss";
 
 function App() {
-  console.log(process.env.NETLIFY_AUTH_TOKEN)
+  useReveal();
+
   return (
-    <HashRouter>
-      <div className="App">
-        <div className="navbarView">
-          <Navbar />
-        </div>
-        <Routes>
-          <Route path="/about" element={<About />} />
-          <Route path="/" element={<Landing />} />
-        </Routes>
-        <div className="footer">
-          <Footer />
-        </div>
-      </div>
-    </HashRouter>
+    <div className="site">
+      <Navbar />
+      <main>
+        <Hero />
+        <Capabilities />
+        <Experience />
+        {featureFlags.projects && <Projects />}
+        <Toolbox />
+      </main>
+      <Footer />
+    </div>
   );
 }
 
